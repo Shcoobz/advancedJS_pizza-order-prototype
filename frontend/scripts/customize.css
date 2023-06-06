@@ -1,0 +1,1137 @@
+/*!
+Basic8 Template v1.03. Copyright (c) 2020 Career Platform AI Srl & Its Licensors. All rights reserved.
+*/
+/* ==== Font types & weight  ==== */
+/* Professional font styles */
+body.professional {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.professional h1, .professional h2, .professional h3, .professional h4 {
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+.professional .largetxt, .professional a.infolink, .professional .quotefooter3 {
+	font-weight: 300;
+}
+.professional h6, .professional .strongtxt, .professional .boldtxt, .professional .quotefooter2 {
+	font-weight: 400;
+}
+.professional .bigtxt, .professional .colortxt span {
+	font-weight: 900;
+}
+.professional .logolink, .professional h5, .professional .footer .lastrow a.footerlink, .professional span.role, .professional .cta a, .professional a.infolink span {
+	font-weight: 500;
+}
+.professional a.mainbutton, .professional a.secondarybutton, .professional a.maincta, .professional a.maincta span, .professional a.twolinebutton, .professional a.twolinebutton span {
+	font-weight: 500;
+}
+.professional .cta a {
+	border-radius: 0;
+}
+.professional h5 {
+	font-weight: 300;
+	font-size: 2.3rem;
+	line-height: 2.5rem;
+}
+.professional .quote {
+	font-weight: 300;
+	font-style: italic;
+}
+.professional .stylish .reference span {
+	font-weight: 600;
+}
+/* Stylish font styles */
+body.stylish {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.stylish h1, .stylish h2, .stylish h3, .stylish h4 {
+	font-weight: 600;
+	text-rendering: optimizeLegibility;
+}
+.stylish .largetxt, .stylish a.infolink, .stylish .quotefooter2 {
+	font-weight: 400;
+}
+.stylish h6 {
+	font-weight: 700;
+}
+.stylish .bigtxt, .stylish .colortxt span {
+	font-weight: 900;
+}
+.stylish h5, .stylish .strongtxt, .stylish a.lnklarge, .stylish h5, .stylish .reference span {
+	font-weight: 600;
+}
+.stylish .boldtxt {
+	font-weight: 500;
+}
+.stylish .footer .lastrow a.footerlink, .stylish span.role, .stylish .cta a, .stylish a.infolink span, .stylish a.mainbutton, .stylish a.secondarybutton, .stylish a.maincta, .stylish a.maincta span, .stylish a.twolinebutton, .stylish a.twolinebutton span {
+	font-weight: 500;
+}
+.stylish .quote, .stylish .quote.largerquote {
+	font-weight: 300;
+	font-style: italic;
+}
+.stylish .quotefooter3 {
+	font-weight: 300;
+}
+.stylish h6 {
+	font-size: 3rem;
+	line-height: 3.2rem;
+}
+/* Stylish roundness */
+.stylish a.twolinebutton, .stylish a.twolinebutton, .stylish a.secondarybutton, .stylish a.maincta, .stylish a.mainbutton, .stylish div.bgimage div.activebox {
+	border-radius: 0.8rem;
+}
+.stylish .cta a {
+	border-radius: 0.6rem;
+}
+.stylish .autoroundness {
+	border-radius: 0.4rem;
+}
+.stylish .quotefooter1 img, .stylish .quotefooter1b img, .stylish .people {
+	border-radius: 50%;
+}
+/* ==== Colors  ==== */
+/* Fallback colors */
+body {
+	background-color: #313131;
+	color: #727E8A;
+}
+/* bgwhite sections colors  */
+.bgwhite {
+	background-color: #FFFFFF;
+}
+.bgwhite, .bgwhite ul.naviglinks li a, .bgwhite.footer, .bgwhite.footer .lastrow .madewith, .bgwhite .quote, .bgwhite .breadcrumb a, .bgwhite .submenu a, .tm {
+	color: #6A7077;
+}
+.bgwhite #hamburger svg {
+	fill: #6A7077;
+}
+.bgwhite h1, .bgwhite h2, .bgwhite h3, .bgwhite h4, .bgwhite h5, .bgwhite .bigtxt, .footer.bgwhite a.notelink, div.bgwhite.bgimage div.largetxt p {
+	color: #3A3A3A;
+}
+.bgwhite.footer .col4 a:hover, .bgwhite.footer .lastrow a.footerlink:hover, .bgwhite.footer .lastrow .madewith a:hover, .bgwhite a.logolink, .bgwhite a.logolink:hover, .bgwhite .quote:before, .bgwhite .quote:after, .bgwhite .quotefooter2 {
+	color: #3A3A3A;
+}
+.bgwhite h6, .bgwhite ul.ulheading li:before, .bgwhite .quote.singlequote:before, .bgwhite .quote.singlequote:after {
+	color: #C3C3C3;
+}
+.bgwhite .largetxt, .bgwhite .midtxt, .bgwhite .quotefooter3, .bgwhite div.col1.breadcrumb {
+	color: #9D9D9D;
+}
+div.bgwhite.bgimage div.activebox {
+	background-color: rgba(255, 255, 255, 0.75);
+}
+div.bgwhite.bgimage div.activebox h6, .bgwhite.footer .lastrow .madewith a, .bgwhite.footer .col4 a, .bgwhite.footer .lastrow a.footerlink {
+	color: #5F5F5F;
+}
+.bgwhite.footer .lastrow a.footerlink, .bgwhite.footer .lastrow .madewith {
+	border-left: 1px solid #F0F0F0;
+}
+.bgwhite.footer #socialicons a svg {
+	fill: #5F5F5F;
+}
+.bgwhite .socialbox svg {
+	fill: #060606;
+}
+.bgwhite ul.naviglinks {
+	border-right: 1px solid #F0F0F0;
+}
+.bgwhite .cta a {
+	background-color: #030303;
+	color: white;
+}
+.bgwhite div#navig.stickynavig {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+div.bgwhite.subnavig.floating {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+@-moz-document url-prefix() {
+	body .bgwhite div#navig.stickynavig {
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+	body div.bgwhite.subnavig.floating {
+		background-color: rgba(255, 255, 255, 0.9);
+	}
+}
+@media screen and (max-width: 64em) {
+	body div.bgwhite.subnavig.floating {
+		background-color: rgba(255, 255, 255, 1);
+	}
+}
+@media screen and (min-height: 52em) {
+	body div.bgwhite.subnavig.floating {
+		background-color: rgba(255, 255, 255, 0.9);
+	}
+}
+.bgwhite .stickynavig {
+	border-bottom: 1px solid #F0F0F0;
+}
+.bgwhite nav#navigitems.mobileopen ul#naviglinks {
+	background-color: white;
+	border: 1px #E5E5E5;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+}
+.bgwhite nav#navigitems.mobileopen ul#naviglinks li {
+	border-bottom: 1px #FAFAFA solid;
+}
+.bgwhite nav#navigitems.mobileopen ul#naviglinks li a {
+	color: #525252;
+}
+.bgwhite nav#navigitems.mobileopen ul#naviglinks li a:hover {
+	background-color: #EFEFEF;
+	color: #000000;
+}
+.bgwhite a.ghostbutton {
+	color: #5F5F5F;
+	background: #FFFFFF;
+	border: 1px solid rgba(179, 179, 179, 70%);
+}
+.bgwhite a.ghostbutton span {
+	color: #9D9D9D;
+}
+.bgwhite a.ghostbutton:hover {
+	border: 1px solid #117BC6;
+	;
+}
+.bgwhite.bgimage a.ghostbutton {
+	color: #232323;
+	background: rgba(241, 241, 241, 0.3);
+	border: 1px solid rgba(162, 162, 162, 90%);
+}
+.bgwhite.bgimage a.ghostbutton span {
+	color: #777777;
+}
+.bgwhite a.mainbutton {
+	color: #FFFFFF;
+	background: #030303;
+}
+.bgwhite a.mainbutton:hover {
+	background: #117BC6;
+}
+.bgwhite a.infolink {
+	color: #030303;
+	border-bottom: 1px solid #030303;
+}
+.bgwhite .svgfeature {
+	fill: #3A3A3A;
+}
+.bgwhite .people {
+	border: 1px solid #EFEFEF;
+}
+.bgwhite .leftline .linebox {
+	border-left: 4px solid #F7F7F7;
+}
+.bgwhite .rightline .linebox {
+	border-right: 4px solid #F7F7F7;
+}
+.bgwhite .quotesvg {
+	fill: #3A3A3A;
+}
+.bgwhite .breadcrumb svg {
+	fill: #DEDEDE;
+}
+.bgwhite .breadcrumb a.home svg {
+	fill: #777777;
+}
+.bgwhite.subnavig.linebelow {
+	border-bottom: 1px solid #F0F0F0;
+}
+.bgwhite .submenu .socialbox {
+	border-left: 1px solid #F0F0F0;
+}
+.bgwhite .thumblink:hover img {
+	-webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.55);
+	-moz-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.55);
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.55);
+}
+.bgwhite input, .bgwhite textarea, .bgwhite select {
+	border-color:#D0D0D0;
+}
+/* bglight sections colors  */
+.bglight {
+	background-color: #F9FAFB;
+}
+.bglight, .bglight ul.naviglinks li a, .bglight.footer, .bglight.footer .lastrow .madewith, .bglight .quote, .bglight .breadcrumb a, .bglight .submenu a, .tm {
+	color: #6A7077;
+}
+.bglight #hamburger svg {
+	fill: #6A7077;
+}
+.bglight ul.ulheading li:before {
+	color: #A7A9AB;
+}
+.bglight h1, .bglight h2, .bglight h3, .bglight h4, .bglight h5, .bglight .bigtxt, .footer.bglight a.notelink, div.bglight.bgimage div.largetxt p, .bglight.footer .col4 a:hover, .bglight.footer .lastrow a.footerlink:hover {
+	color: #3A3A3A;
+}
+.bglight.footer .lastrow .madewith a:hover, .bglight a.logolink, .bglight a.logolink:hover, .bglight .quote:before, .bglight .quote:after, .bglight .quotefooter2 {
+	color: #3A3A3A;
+}
+.bglight h6, .bglight .quote.singlequote:before, .bglight .quote.singlequote:after {
+	color: #C3C3C3;
+}
+.bglight .largetxt, .bglight .midtxt, .bglight div.col1.breadcrumb {
+	color: #9D9D9D;
+}
+.bglight .quotefooter3 {
+	color: #888888;
+}
+div.bglight.bgimage div.activebox {
+	background-color: rgba(255, 255, 255, 0.75);
+}
+div.bglight.bgimage div.activebox h6, .bglight.footer .lastrow .madewith a, .bglight.footer .col4 a, .bglight.footer .lastrow a.footerlink {
+	color: #5F5F5F;
+}
+.bglight.footer .lastrow a.footerlink, .bglight.footer .lastrow .madewith {
+	border-left: 1px solid #F0F0F0;
+}
+.bglight.footer #socialicons a svg {
+	fill: #5F5F5F;
+}
+.bglight .socialbox svg {
+	fill: #060606;
+}
+.bglight ul.naviglinks {
+	border-right: 1px solid #F0F0F0;
+}
+.bglight .cta a {
+	background-color: #030303;
+	color: white;
+}
+.bglight div#navig.stickynavig {
+	background-color: rgba(252, 252, 252, 0.7);
+}
+div.bglight.subnavig.floating {
+	background-color: rgba(252, 252, 252, 0.9);
+}
+@-moz-document url-prefix() {
+	body .bglight div#navig.stickynavig {
+		background-color: rgba(252, 252, 252, 0.7);
+	}
+	body div.bglight.subnavig.floating {
+		background-color: rgba(252, 252, 252, 0.9);
+	}
+}
+@media screen and (max-width: 64em) {
+	body div.bglight.subnavig.floating {
+		background-color: rgba(252, 252, 252, 1);
+	}
+}
+@media screen and (min-height: 52em) {
+	body div.bglight.subnavig.floating {
+		background-color: rgba(252, 252, 252, 0.9);
+	}
+}
+.bglight .stickynavig {
+	border-bottom: 1px solid #F0F0F0;
+}
+.bglight nav#navigitems.mobileopen ul#naviglinks {
+	background-color: white;
+	border: 1px #E5E5E5;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+}
+.bglight nav#navigitems.mobileopen ul#naviglinks li {
+	border-bottom: 1px #FAFAFA solid;
+}
+.bglight nav#navigitems.mobileopen ul#naviglinks li a {
+	color: #525252;
+}
+.bglight nav#navigitems.mobileopen ul#naviglinks li a:hover {
+	background-color: #EFEFEF;
+	color: #000000;
+}
+.bglight a.ghostbutton {
+	color: #5F5F5F;
+	background: rgba(253, 253, 253, 0.5);
+	border: 1px solid rgba(179, 179, 179, 60%);
+}
+.bglight a.ghostbutton span {
+	color: #9D9D9D;
+}
+.bglight a.ghostbutton:hover {
+	border: 1px solid #117BC6;
+	;
+}
+.bglight.bgimage a.ghostbutton {
+	color: #232323;
+	background: rgba(241, 241, 241, 0.3);
+	border: 1px solid rgba(162, 162, 162, 90%);
+}
+.bglight.bgimage a.ghostbutton span {
+	color: #777777;
+}
+.bglight a.mainbutton {
+	color: #FFFFFF;
+	background: #030303;
+}
+.bglight a.mainbutton:hover {
+	background: #117BC6;
+}
+.bglight a.infolink {
+	color: #030303;
+	border-bottom: 1px solid #030303;
+}
+.bglight .svgfeature {
+	fill: #3A3A3A;
+}
+.bglight .people {
+	border: 1px solid #EFEFEF;
+}
+.bglight .leftline .linebox {
+	border-left: 4px solid #EFEFEF;
+}
+.bglight .rightline .linebox {
+	border-right: 4px solid #EFEFEF;
+}
+.bglight .quotesvg {
+	fill: #3A3A3A;
+}
+.bglight .breadcrumb svg {
+	fill: #DEDEDE;
+}
+.bglight .breadcrumb a.home svg {
+	fill: #777777;
+}
+.bglight.subnavig.linebelow {
+	border-bottom: 1px solid #F1F1F1;
+}
+.bglight .submenu .socialbox {
+	border-left: 1px solid #F1F1F1;
+}
+.bglight .thumblink:hover img {
+	-webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.55);
+	-moz-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.55);
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.55);
+}
+.bglight input, .bglight textarea, .bglight select {
+	border-color:#979797;
+}
+/* bggrey sections colors  */
+.bggrey {
+	background-color: #F2F2F2;
+}
+.bggrey, .bggrey ul.naviglinks li a, .bggrey.footer, .bggrey.footer .lastrow .madewith, .bggrey .quote, .bggrey .breadcrumb a, .bggrey .submenu a, .tm {
+	color: #6A7077;
+}
+.bggrey #hamburger svg {
+	fill: #6A7077;
+}
+.bggrey ul.ulheading li:before {
+	color: #929598;
+}
+.bggrey h1, .bggrey h2, .bggrey h3, .bggrey h4, .bggrey h5, .bggrey .bigtxt, .footer.bggrey a.notelink, div.bggrey.bgimage div.largetxt p, .bggrey.footer .col4 a:hover, .bggrey.footer .lastrow a.footerlink:hover {
+	color: #3A3A3A;
+}
+.bggrey.footer .lastrow .madewith a:hover, .bggrey a.logolink, .bggrey a.logolink:hover, .bggrey .quote:before, .bggrey .quote:after, .bggrey .quotefooter2 {
+	color: #3A3A3A;
+}
+.bggrey h6, .bggrey .quote.singlequote:before, .bggrey .quote.singlequote:after {
+	color: #BABABA;
+}
+.bggrey .largetxt, .bggrey .midtxt, .bggrey div.col1.breadcrumb {
+	color: #8A8A8A;
+}
+.bggrey .quotefooter3 {
+	color: #888888;
+}
+div.bggrey.bgimage div.activebox {
+	background-color: rgba(255, 255, 255, 0.75);
+}
+div.bggrey.bgimage div.activebox h6, .bggrey.footer .lastrow .madewith a, .bggrey.footer .col4 a, .bggrey.footer .lastrow a.footerlink {
+	color: #5F5F5F;
+}
+.bggrey.footer .lastrow a.footerlink, .bggrey.footer .lastrow .madewith {
+	border-left: 1px solid #F0F0F0;
+}
+.bggrey.footer #socialicons a svg {
+	fill: #5F5F5F;
+}
+.bggrey .socialbox svg {
+	fill: #060606;
+}
+.bggrey ul.naviglinks {
+	border-right: 1px solid #F0F0F0;
+}
+.bggrey .cta a {
+	background-color: #030303;
+	color: white;
+}
+.bggrey div#navig.stickynavig {
+	background-color: rgba(249, 249, 249, 0.7);
+}
+div.bggrey.subnavig.floating {
+	background-color: rgba(249, 249, 249, 0.9);
+}
+@-moz-document url-prefix() {
+	body .bggrey div#navig.stickynavig {
+		background-color: rgba(249, 249, 249, 0.7);
+	}
+	body div.bggrey.subnavig.floating {
+		background-color: rgba(249, 249, 249, 0.9);
+	}
+}
+@media screen and (max-width: 64em) {
+	body div.bggrey.subnavig.floating {
+		background-color: rgba(249, 249, 249, 1);
+	}
+}
+@media screen and (min-height: 52em) {
+	body div.bggrey.subnavig.floating {
+		background-color: rgba(249, 249, 249, 0.9);
+	}
+}
+.bggrey .stickynavig {
+	border-bottom: 1px solid #E6E6E6;
+}
+.bggrey nav#navigitems.mobileopen ul#naviglinks {
+	background-color: white;
+	border: 1px #E5E5E5;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+}
+.bggrey nav#navigitems.mobileopen ul#naviglinks li {
+	border-bottom: 1px #FAFAFA solid;
+}
+.bggrey nav#navigitems.mobileopen ul#naviglinks li a {
+	color: #525252;
+}
+.bggrey nav#navigitems.mobileopen ul#naviglinks li a:hover {
+	background-color: #EFEFEF;
+	color: #000000;
+}
+.bggrey a.ghostbutton {
+	color: #5F5F5F;
+	background: rgba(247, 247, 247, 0.5);
+	border: 1px solid rgba(179, 179, 179, 70%);
+}
+.bggrey a.ghostbutton span {
+	color: #9D9D9D;
+}
+.bggrey a.ghostbutton:hover {
+	border: 1px solid #117BC6;
+	;
+}
+.bggrey.bgimage a.ghostbutton {
+	color: #232323;
+	background: rgba(241, 241, 241, 0.3);
+	border: 1px solid rgba(162, 162, 162, 90%);
+}
+.bggrey.bgimage a.ghostbutton span {
+	color: #777777;
+}
+.bggrey a.mainbutton {
+	color: #FFFFFF;
+	background: #030303;
+}
+.bggrey a.mainbutton:hover {
+	background: #117BC6;
+}
+.bggrey a.infolink {
+	color: #030303;
+	border-bottom: 1px solid #030303;
+}
+.bggrey .svgfeature {
+	fill: #3A3A3A;
+}
+.bggrey .people {
+	border: 1px solid #EFEFEF;
+}
+.bggrey .leftline .linebox {
+	border-left: 4px solid #EFEFEF;
+}
+.bggrey .rightline .linebox {
+	border-right: 4px solid #EFEFEF;
+}
+.bggrey .quotesvg {
+	fill: #3A3A3A;
+}
+.bggrey .breadcrumb svg {
+	fill: #CCCCCC;
+}
+.bggrey .breadcrumb a.home svg {
+	fill: #777777;
+}
+.bggrey.subnavig.linebelow {
+	border-bottom: 1px solid #E5E5E5;
+}
+.bggrey .submenu .socialbox {
+	border-left: 1px solid #E5E5E5;
+}
+.bggrey .thumblink:hover img {
+	-webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.55);
+	-moz-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.55);
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.55);
+}
+.bggrey input, .bggrey textarea, .bggrey select {
+	border-color:#979797;
+}
+/* bgdark sections colors  */
+.bgdark {
+	background-color: #24242C;
+}
+.bgdark, .bgdark .largetxt, .bgdark.footer, .bgdark.footer .lastrow .madewith, .bgdark .midtxt, .bgdark ul.ulheading li:before, .tm {
+	color: #888888;
+}
+.bgdark a.logolink, .bgdark a.logolink:hover, .bgdark .breadcrumb a, .bgdark .submenu a, .bgdark .breadcrumb {
+	color: #CACACA;
+}
+.bgdark h1, .bgdark h2, .bgdark h3, .bgdark h4, .bgdark h5, .bgdark .bigtxt, .bgdark.footer .col4 a:hover, .bgdark.footer .lastrow a.footerlink:hover, .bgdark.footer .lastrow .madewith a:hover {
+	color: #F2F2F2;
+}
+.bgdark h6, .bgdark .quote.singlequote:before, .bgdark .quote.singlequote:after {
+	color: #616161;
+}
+.bgdark ul.naviglinks li a, .bgdark .quote:before, .bgdark .quote:after, .bgdark .quotefooter2 {
+	color: #CACACA;
+}
+.bgdark #hamburger svg {
+	fill: #CACACA;
+}
+.footer.bgdark a.notelink, .bgdark.footer .col4 a, .bgdark.footer .lastrow a.footerlink, .bgdark.footer .lastrow .madewith a {
+	color: #C0C0C0;
+}
+div.bgdark.bgimage div.activebox {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+div.bgdark.bgimage div.activebox h6, div.bgdark.bgimage div.largetxt p {
+	color: #A7A7A7;
+}
+.bgdark.footer .lastrow a.footerlink, .bgdark.footer .lastrow .madewith {
+	border-left: 1px solid #3B3B3B;
+}
+.bgdark.footer #socialicons a svg {
+	fill: #C0C0C0;
+}
+.bgdark .socialbox svg {
+	fill: #E2E2E2;
+}
+.bgdark ul.naviglinks {
+	border-right: 1px solid #3B3B3B;
+}
+.bgdark .cta a {
+	background-color: #ffffff;
+	color: #000000;
+}
+.bgdark div#navig.stickynavig {
+	background-color: rgba(28, 27, 33, 0.7);
+}
+div.bgdark.subnavig.floating {
+	background-color: rgba(28, 27, 33, 0.85);
+}
+@-moz-document url-prefix() {
+	body .bgdark div#navig.stickynavig {
+		background-color: rgba(28, 27, 33, 0.7);
+	}
+	body div.bgdark.subnavig.floating {
+		background-color: rgba(28, 27, 33, 0.85);
+	}
+}
+@media screen and (max-width: 64em) {
+	body div.bgdark.subnavig.floating {
+		background-color: rgba(28, 27, 33, 1);
+	}
+}
+@media screen and (min-height: 52em) {
+	body div.bgdark.subnavig.floating {
+		background-color: rgba(28, 27, 33, 0.85);
+	}
+}
+.bgdark .stickynavig {
+	border-bottom: 1px solid #333333;
+}
+.bgdark nav#navigitems.mobileopen ul#naviglinks {
+	background-color: #323232;
+	border: 1px #4C4C4C;
+	box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.3);
+}
+.bgdark nav#navigitems.mobileopen ul#naviglinks li {
+	border-bottom: 1px #3B3B3B solid;
+}
+.bgdark nav#navigitems.mobileopen ul#naviglinks li a {
+	color: #AFAFAF;
+}
+.bgdark nav#navigitems.mobileopen ul#naviglinks li a:hover {
+	background-color: #161616;
+	color: #E0E5E9;
+}
+.bgdark a.ghostbutton {
+	color: #cccccc;
+	background: #24242C;
+	border: 1px solid rgba(255, 255, 255, .2);
+}
+.bgdark a.ghostbutton span {
+	color: #858585;
+}
+.bgdark a.ghostbutton:hover {
+	color: #117BC6;
+	border: 1px solid #117BC6;
+	;
+}
+.bgdark.bgimage a.ghostbutton {
+	color: #cccccc;
+	background: rgba(56, 56, 56, 10%);
+	border: 1px solid rgba(255, 255, 255, 20%);
+}
+.bgdark.bgimage a.ghostbutton span {
+	color: #858585;
+}
+.bgdark a.mainbutton {
+	color: #ffffff;
+	background: #075e9a;
+}
+.bgdark a.mainbutton:hover {
+	color: #ffffff;
+	background: #117BC6;
+}
+.bgdark a.infolink {
+	color: #ffffff;
+	border-bottom: 1px solid #D9D9D9;
+}
+.bgdark .svgfeature {
+	fill: #F2F2F2;
+}
+.bgdark .people {
+	border: 1px solid #313131;
+}
+.bgdark .leftline .linebox {
+	border-left: 4px solid #404040;
+}
+.bgdark .rightline .linebox {
+	border-right: 4px solid #404040;
+}
+.bgdark .quote {
+	color: #a5a5a5;
+}
+.bgdark .quotefooter3, .bgdark div.col1.breadcrumb {
+	color: #949494;
+}
+.bgdark .quotesvg {
+	fill: #CACACA;
+}
+.bgdark .breadcrumb svg {
+	fill: #616161;
+}
+.bgdark .breadcrumb a.home svg {
+	fill: #777777;
+}
+.bgdark.subnavig.linebelow {
+	border-bottom: 1px solid #3B3B3B;
+}
+.bgdark .submenu .socialbox {
+	border-left: 1px solid #3B3B3B;
+}
+.bgdark .thumblink:hover img {
+	-webkit-box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.75);
+	-moz-box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.75);
+	box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.75);
+}
+.bgdark input, .bgdark textarea, .bgdark select {
+	border-color:#979797;
+}
+/* bgblack sections colors  */
+.bgblack {
+	background-color: #030303;
+}
+.bgblack, .bgblack .largetxt, .bgblack.footer, .bgblack.footer .lastrow .madewith, .bgblack .midtxt, .bgblack ul.ulheading li:before, .tm {
+	color: #888888;
+}
+.bgblack a.logolink, .bgblack a.logolink:hover, .bgblack .breadcrumb a, .bgblack .submenu a, .bgblack .breadcrumb {
+	color: #CACACA;
+}
+.bgblack h1, .bgblack h2, .bgblack h3, .bgblack h4, .bgblack h5, .bgblack .bigtxt, .bgblack.footer .col4 a:hover, .bgblack.footer .lastrow a.footerlink:hover, .bgblack.footer .lastrow .madewith a:hover {
+	color: #F2F2F2;
+}
+.bgblack h6, .bgblack .quote.singlequote:before, .bgblack .quote.singlequote:after {
+	color: #565656;
+}
+.bgblack ul.naviglinks li a, .bgblack .quote:before, .bgblack .quote:after, .bgblack .quotefooter2 {
+	color: #CACACA;
+}
+.bgblack #hamburger svg {
+	fill: #CACACA;
+}
+.footer.bgblack a.notelink, .bgblack.footer .col4 a, .bgblack.footer .lastrow a.footerlink, .bgblack.footer .lastrow .madewith a {
+	color: #C0C0C0;
+}
+div.bgblack.bgimage div.activebox {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+div.bgblack.bgimage div.activebox h6, div.bgblack.bgimage div.largetxt p {
+	color: #A7A7A7;
+}
+.bgblack.footer .lastrow a.footerlink, .bgblack.footer .lastrow .madewith {
+	border-left: 1px solid #3A3A3A;
+}
+.bgblack.footer #socialicons a svg {
+	fill: #C0C0C0;
+}
+.bgblack ul.naviglinks {
+	border-right: 1px solid #3A3A3A;
+}
+.bgblack .cta a {
+	background-color: #ffffff;
+	color: #000000;
+}
+.bgblack div#navig.stickynavig {
+	background-color: rgba(3, 3, 3, 0.7);
+}
+div.bgblack.subnavig.floating {
+	background-color: rgba(3, 3, 3, 0.8);
+}
+@-moz-document url-prefix() {
+	body .bgblack div#navig.stickynavig {
+		background-color: rgba(3, 3, 3, 0.7);
+	}
+	body div.bgblack.subnavig.floating {
+		background-color: rgba(3, 3, 3, 0.8);
+	}
+}
+@media screen and (max-width: 64em) {
+	body div.bgblack.subnavig.floating {
+		background-color: rgba(3, 3, 3, 1);
+	}
+}
+@media screen and (min-height: 52em) {
+	body div.bgblack.subnavig.floating {
+		background-color: rgba(3, 3, 3, 0.8);
+	}
+}
+.bgblack .stickynavig {
+	border-bottom: 1px solid #333333;
+}
+.bgblack nav#navigitems.mobileopen ul#naviglinks {
+	background-color: #323232;
+	border: 1px #4C4C4C;
+	box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.3);
+}
+.bgblack nav#navigitems.mobileopen ul#naviglinks li {
+	border-bottom: 1px #3A3A3A solid;
+}
+.bgblack nav#navigitems.mobileopen ul#naviglinks li a {
+	color: #AFAFAF;
+}
+.bgblack nav#navigitems.mobileopen ul#naviglinks li a:hover {
+	background-color: #161616;
+	color: #E0E5E9;
+}
+.bgblack a.ghostbutton {
+	color: #cccccc;
+	background: #030303;
+	border: 1px solid rgba(255, 255, 255, .2);
+}
+.bgblack a.ghostbutton span {
+	color: #858585;
+}
+.bgblack a.ghostbutton:hover {
+	color: #117BC6;
+	border: 1px solid #117BC6;
+	;
+}
+.bgblack.bgimage a.ghostbutton {
+	color: #cccccc;
+	background: rgba(56, 56, 56, 10%);
+	border: 1px solid rgba(255, 255, 255, 20%);
+}
+.bgblack.bgimage a.ghostbutton span {
+	color: #858585;
+}
+.bgblack a.mainbutton {
+	color: #ffffff;
+	background: #075e9a;
+}
+.bgblack a.mainbutton:hover {
+	color: #ffffff;
+	background: #117BC6;
+}
+.bgblack a.infolink {
+	color: #ffffff;
+	border-bottom: 1px solid #D9D9D9;
+}
+.bgblack .svgfeature {
+	fill: #F2F2F2;
+}
+.bgblack .socialbox svg {
+	fill: #E2E2E2;
+}
+.bgblack .people {
+	border: 1px solid #313131;
+}
+.bgblack .leftline .linebox {
+	border-left: 4px solid #252525;
+}
+.bgblack .rightline .linebox {
+	border-right: 4px solid #252525;
+}
+.bgblack .quote, .bgblack .quotefooter3 {
+	color: #a5a5a5;
+}
+.bgblack div.col1.breadcrumb {
+	color: #8A8A8A;
+}
+.bgblack .quotesvg {
+	fill: #CACACA;
+}
+.bgblack .breadcrumb svg {
+	fill: #616161;
+}
+.bgblack .breadcrumb a.home svg {
+	fill: #777777;
+}
+.bgblack.subnavig.linebelow {
+	border-bottom: 1px solid #3A3A3A;
+}
+.bgblack .submenu .socialbox {
+	border-left: 1px solid #3A3A3A;
+}
+.bgblack .thumblink:hover img {
+	-webkit-box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.65);
+	-moz-box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.65);
+	box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.65);
+}
+.bgblack input, .bgblack textarea, .bgblack select {
+	border-color:#979797;
+}
+/* ==== Colours: Buttons and Links Customization ==== */
+/* blue theme*/
+.blue a, .blue a:hover, .blue .breadcrumb a:hover, .blue .submenu a:hover, .blue .colortxt, .blue ul.naviglinks li a:hover {
+	color: #117BC6;
+}
+.blue #hamburger:hover svg, .blue a#nextlink svg {
+	fill: #117BC6;
+}
+.blue .logolink span.logomid, .blue a.logolink:hover span.logomid, .blue a.maincta, .blue .bgblack a.mainbutton, .blue .bgdark a.mainbutton, .blue .bggrey a.mainbutton, .blue .bglight a.mainbutton, .blue .bgwhite a.mainbutton {
+	background-color: #075e9a;
+}
+.blue .cta a:hover, .blue a.maincta:hover, .blue a.mainbutton:hover {
+	background-color: #117BC6;
+	color: #FFFFFF;
+}
+.blue a.ghostbutton:hover {
+	color: #117BC6;
+	border: 1px solid #117BC6;
+}
+.blue a.infolink:hover {
+	color: #117BC6;
+	border-bottom: 1px solid #117BC6;
+}
+.blue a.maincta span {
+	color: #ADADAD;
+}
+.blue a.maincta:hover span {
+	color: #B3B3B3;
+}
+.blue .logolink span.logomid, .blue a.maincta, .blue .bgblack a.mainbutton, .blue .bgdark a.mainbutton, .blue .bggrey a.mainbutton, .blue .bglight a.mainbutton, .blue .bgwhite a.mainbutton {
+	color: #FFFFFF;
+}
+.blue .footer #socialicons a:hover svg, .blue .subnavig a:hover svg {
+	fill: #117BC6;
+}
+.blue .darklink, .blue .bgimage.bgwhite a.lnknoline, .blue .bgimage.bglight a.lnknoline, .blue .bgimage.bggrey a.lnknoline {
+	color: #0d66a5;
+}
+/* pink theme */
+.pink a, .pink a:hover, .pink .breadcrumb a:hover, .pink .colortxt, .pink ul.naviglinks li a:hover {
+	color: #FD42AA;
+}
+.pink #hamburger:hover svg, .pink a#nextlink svg {
+	fill: #FD42AA;
+}
+.pink .logolink span.logomid, .pink a.logolink:hover span.logomid, .pink a.maincta, .pink .bgblack a.mainbutton, .pink .bgdark a.mainbutton, .pink .bggrey a.mainbutton, .pink .bglight a.mainbutton, .pink .bgwhite a.mainbutton {
+	background-color: #DA1B85;
+}
+.pink .cta a:hover, .pink a.maincta:hover, .pink a.mainbutton:hover {
+	background-color: #FD42AA;
+	color: #FFFFFF;
+}
+.pink a.ghostbutton:hover {
+	color: #FD42AA;
+	border: 1px solid #FD42AA;
+}
+.pink a.infolink:hover {
+	color: #FD42AA;
+	border-bottom: 1px solid #FD42AA;
+}
+.pink a.maincta span {
+	color: #E3E3E3;
+}
+.pink a.maincta:hover span {
+	color: #E2E2E2;
+}
+.pink .logolink span.logomid, .pink a.maincta, .pink .bgblack a.mainbutton, .pink .bgdark a.mainbutton, .pink .bggrey a.mainbutton, .pink .bglight a.mainbutton, .pink .bgwhite a.mainbutton {
+	color: #FFFFFF;
+}
+.pink .footer #socialicons a:hover svg, .pink .subnavig a:hover svg {
+	fill: #FD42AA;
+}
+.pink .darklink, .pink .bgimage.bgwhite a.lnknoline, .pink .bgimage.bglight a.lnknoline, .pink .bgimage.bggrey a.lnknoline {
+	color: #c70f75;
+}
+/* orange theme */
+.orange a, .orange a:hover, .orange .breadcrumb a:hover, .orange .submenu a:hover, .orange .colortxt, .orange ul.naviglinks li a:hover {
+	color: #F48E04;
+}
+.orange #hamburger:hover svg, .orange a#nextlink svg {
+	fill: #F48E04;
+}
+.orange .logolink span.logomid, .orange a.logolink:hover span.logomid, .orange a.maincta, .orange .bgblack a.mainbutton, .orange .bgdark a.mainbutton, .orange .bggrey a.mainbutton, .orange .bglight a.mainbutton, .orange .bgwhite a.mainbutton {
+	background-color: #F36A01;
+}
+.orange .cta a:hover, .orange a.maincta:hover, .orange a.mainbutton:hover {
+	background-color: #F48E04;
+	color: #FFFFFF;
+}
+.orange a.ghostbutton:hover {
+	color: #F48E04;
+	border: 1px solid #F48E04;
+}
+.orange a.infolink:hover {
+	color: #F5B645;
+	border-bottom: 1px solid #F48E04;
+}
+.orange a.maincta span {
+	color: #E0E0E0;
+}
+.orange a.maincta:hover span {
+	color: #EDEDED;
+}
+.orange .logolink span.logomid, .orange a.maincta, .orange .bgblack a.mainbutton, .orange .bgdark a.mainbutton, .orange .bggrey a.mainbutton, .orange .bglight a.mainbutton, .orange .bgwhite a.mainbutton {
+	color: #FFFFFF;
+}
+.orange .footer #socialicons a:hover svg, .orange .subnavig a:hover svg {
+	fill: #F48E04;
+}
+.orange .darklink, .orange .bgimage.bgwhite a.lnknoline, .orange .bgimage.bglight a.lnknoline, .orange .bgimage.bggrey a.lnknoline {
+	color: #d0550c;
+}
+/* red theme */
+.red a, .red a:hover, .red .breadcrumb a:hover, .red .submenu a:hover, .red .colortxt, .red ul.naviglinks li a:hover {
+	color: #FF4461;
+}
+.red #hamburger:hover svg, .red a#nextlink svg {
+	fill: #FF4461;
+}
+.red .logolink span.logomid, .red a.logolink:hover span.logomid, .red a.maincta, .red .bgblack a.mainbutton, .red .bgdark a.mainbutton, .red .bggrey a.mainbutton, .red .bglight a.mainbutton, .red .bgwhite a.mainbutton {
+	background-color: #DB1C3A;
+}
+.red .cta a:hover, .red a.maincta:hover, .red a.mainbutton:hover {
+	background-color: #FF4461;
+	color: #FFFFFF;
+}
+.red a.ghostbutton:hover {
+	color: #FF4461;
+	border: 1px solid #FF4461;
+}
+.red a.infolink:hover {
+	color: #FF4461;
+	border-bottom: 1px solid #FF4461;
+}
+.red a.maincta span {
+	color: #E0E0E0;
+}
+.red a.maincta:hover span {
+	color: #EDEDED;
+}
+.red .logolink span.logomid, .red a.maincta, .red .bgblack a.mainbutton, .red .bgdark a.mainbutton, .red .bggrey a.mainbutton, .red .bglight a.mainbutton, .red .bgwhite a.mainbutton {
+	color: #FFFFFF;
+}
+.red .footer #socialicons a:hover svg, .red .subnavig a:hover svg {
+	fill: #FF4461;
+}
+.red .darklink, .red .bgimage.bgwhite a.lnknoline, .red .bgimage.bglight a.lnknoline, .red .bgimage.bggrey a.lnknoline {
+	color: #bf122d;
+}
+/* cyan theme */
+.cyan a, .cyan a:hover, .cyan .breadcrumb a:hover, .cyan .submenu a:hover, .cyan .colortxt, .cyan ul.naviglinks li a:hover {
+	color: #1EB6CC;
+}
+.cyan #hamburger:hover svg, .cyan a#nextlink svg {
+	fill: #1EB6CC;
+}
+.cyan .logolink span.logomid, .cyan a.logolink:hover span.logomid, .cyan a.maincta, .cyan .bgblack a.mainbutton, .cyan .bgdark a.mainbutton, .cyan .bggrey a.mainbutton, .cyan .bglight a.mainbutton, .cyan .bgwhite a.mainbutton {
+	background-color: #0C99AB;
+}
+.cyan .cta a:hover, .cyan a.maincta:hover, .cyan a.mainbutton:hover {
+	background-color: #1EB6CC;
+	color: #FFFFFF;
+}
+.cyan a.ghostbutton:hover {
+	color: #1EB6CC;
+	border: 1px solid #1EB6CC;
+}
+.cyan a.infolink:hover {
+	color: #1EB6CC;
+	border-bottom: 1px solid #1EB6CC;
+}
+.cyan a.maincta span {
+	color: #E0E0E0;
+}
+.cyan a.maincta:hover span {
+	color: #FAFAFA;
+}
+.cyan .logolink span.logomid, .cyan a.maincta, .cyan .bgblack a.mainbutton, .cyan .bgdark a.mainbutton, .cyan .bggrey a.mainbutton, .cyan .bglight a.mainbutton, .cyan .bgwhite a.mainbutton {
+	color: #FFFFFF;
+}
+.cyan .footer #socialicons a:hover svg, .cyan .subnavig a:hover svg {
+	fill: #1EB6CC;
+}
+.cyan .darklink, .cyan .bgimage.bgwhite a.lnknoline, .cyan .bgimage.bglight a.lnknoline, .cyan .bgimage.bggrey a.lnknoline {
+	color: #066b79;
+}
+/* green theme */
+.green a, .green a:hover, .green .breadcrumb a:hover, .green .submenu a:hover, .green .colortxt, .green ul.naviglinks li a:hover {
+	color: #30BA4F;
+}
+.green #hamburger:hover svg, .green a#nextlink svg {
+	fill: #30BA4F;
+}
+.green .logolink span.logomid, .green a.logolink:hover span.logomid, .green a.maincta, .green .bgblack a.mainbutton, .green .bgdark a.mainbutton, .green .bggrey a.mainbutton, .green .bglight a.mainbutton, .green .bgwhite a.mainbutton {
+	background-color: #129F31;
+}
+.green .cta a:hover, .green a.maincta:hover, .green a.mainbutton:hover {
+	background-color: #30BA4F;
+	color: #FFFFFF;
+}
+.green a.ghostbutton:hover {
+	color: #30BA4F;
+	border: 1px solid #30BA4F;
+}
+.green a.infolink:hover {
+	color: #30BA4F;
+	border-bottom: 1px solid #30BA4F;
+}
+.green a.maincta span {
+	color: #E0E0E0;
+}
+.green a.maincta:hover span {
+	color: #FBFBFB;
+}
+.green .logolink span.logomid, .green a.maincta, .green .bgblack a.mainbutton, .green .bgdark a.mainbutton, .green .bggrey a.mainbutton, .green .bglight a.mainbutton, .green .bgwhite a.mainbutton {
+	color: #FFFFFF;
+}
+.green .footer #socialicons a:hover svg, .green .subnavig a:hover svg {
+	fill: #30BA4F;
+}
+.green .darklink, .green .bgimage.bgwhite a.lnknoline, .green .bgimage.bglight a.lnknoline, .green .bgimage.bggrey a.lnknoline {
+	color: #108219;
+}
+/* === Logo positioning === */
+.logolink.logo {
+	margin-top: 1.8rem;
+}
+.logolink.logo img {
+	height: 4.2rem;
+	margin-top: -1rem;
+}
+/* === Background Images === */
+div.bgimage.bgimage1 {
+	background: url(../images/boilerplate/bgimg-1.webp) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
