@@ -2,50 +2,82 @@
   {
     "id": 1,
     "name": "Margherita",
+    "description": "A timeless classic honoring Queen Margherita of Italy. This pizza is an uncomplicated blend of simple and fresh ingredients: tangy San Marzano tomatoes, a hefty layer of creamy mozzarella cheese, fresh basil leaves, and a drizzle of extra virgin olive oil on our perfect pizza dough.",
     "ingredients": ["tomato sauce", "mozzarella cheese", "fresh basil"],
     "price": 8.99,
-    "allergens": [2,5]
+    "allergens": [2, 5]
   },
   {
     "id": 2,
     "name": "Pepperoni",
+    "description": "America's favorite pizza topping takes center stage here. Our pepperoni pizza is a delicious carnival of crispy, curling pepperoni slices atop a layer of melted mozzarella cheese, and our secret recipe tomato sauce. Every bite is a bold taste of the traditional.",
     "ingredients": ["tomato sauce", "mozzarella cheese", "spicy pepperoni"],
     "price": 9.99,
-    "allergens": [2,5]
+    "allergens": [2, 5]
   },
   {
     "id": 3,
     "name": "Hawaii",
+    "description": "The controversial pizza that you can't help but love. The Hawaii pizza is the perfect harmony of sweet pineapple chunks and savory ham pieces, all topped with melt-in-your-mouth mozzarella on our golden-brown pizza dough. It's the tropical vacation your taste buds didn't know they needed.",
     "ingredients": ["tomato sauce", "mozzarella cheese", "ham", "pineapple"],
     "price": 10.99,
-    "allergens": [2,5]
+    "allergens": [2, 5]
   },
   {
     "id": 4,
     "name": "BBQ Chicken",
-    "ingredients": ["BBQ sauce", "mozzarella cheese", "grilled chicken", "red onions", "cilantro"],
+    "description": "A hearty and flavor-packed option, our BBQ Chicken pizza is smothered in a sweet and tangy BBQ sauce, then topped with grilled chicken, red onions, a blend of cheddar and mozzarella cheeses, and finished with a sprinkle of fresh cilantro. It's a backyard BBQ flavor that fits on a pizza.",
+    "ingredients": [
+      "BBQ sauce",
+      "mozzarella cheese",
+      "grilled chicken",
+      "red onions",
+      "cilantro"
+    ],
     "price": 11.99,
-    "allergens": [2,3,5]
+    "allergens": [2, 3, 5]
   },
   {
     "id": 5,
     "name": "Quattro Formagio",
-    "ingredients": ["tomato sauce", "mozzarella cheese", "cheddar cheese", "Parmesan cheese", "creamy cheese"],
+    "description": "A cheese lover's dream, the Quattro Formaggi is generously topped with a blend of four distinct cheeses. Creamy mozzarella, tangy blue cheese, rich cheddar, and delicate ricotta unite to create a pizza that is indulgently cheesy and irresistibly flavorful.",
+    "ingredients": [
+      "tomato sauce",
+      "mozzarella cheese",
+      "cheddar cheese",
+      "Parmesan cheese",
+      "creamy cheese"
+    ],
     "price": 12.99,
-    "allergens": [1,2,5]
+    "allergens": [1, 2, 5]
   },
   {
     "id": 6,
     "name": "Al Tonno",
-    "ingredients": ["tomato sauce", "mozzarella cheese", "tuna", "red onions", "capers"],
+    "description": "A staple in Italian pizzerias, our Al Tonno pizza comes with a rich tomato sauce base, topped with tender tuna chunks, sweet onions, capers, and a layer of melted mozzarella cheese. A deliciously different kind of pizza that tuna lovers will appreciate.",
+    "ingredients": [
+      "tomato sauce",
+      "mozzarella cheese",
+      "tuna",
+      "red onions",
+      "capers"
+    ],
     "price": 13.99,
-    "allergens": [2,3,5]
+    "allergens": [2, 3, 5]
   },
   {
     "id": 7,
     "name": "Frutti di Mare",
-    "ingredients": ["tomato sauce", "mozzarella cheese", "calamari", "shrimp", "mussels", "clams"],
+    "description": "For those who can't get enough of the sea's bounty, the Frutti di Mare pizza is a luxurious spread of assorted seafood on a pizza. Fresh clams, tender squid, succulent shrimp, and mussels, all atop a base of tomato sauce and finished with a layer of bubbling mozzarella. It's like a trip to the seaside, in pizza form.",
+    "ingredients": [
+      "tomato sauce",
+      "mozzarella cheese",
+      "calamari",
+      "shrimp",
+      "mussels",
+      "clams"
+    ],
     "price": 14.99,
-    "allergens": [2,3,4,5]
+    "allergens": [2, 3, 4, 5]
   }
 ]
