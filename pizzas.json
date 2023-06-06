@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Margherita",
+    "ingredients": ["tomato sauce", "mozzarella cheese", "fresh basil"],
+    "price": 8.99,
+    "allergens": [2,5]
+  },
+  {
+    "id": 2,
+    "name": "Pepperoni",
+    "ingredients": ["tomato sauce", "mozzarella cheese", "spicy pepperoni"],
+    "price": 9.99,
+    "allergens": [2,5]
+  },
+  {
+    "id": 3,
+    "name": "Hawaii",
+    "ingredients": ["tomato sauce", "mozzarella cheese", "ham", "pineapple"],
+    "price": 10.99,
+    "allergens": [2,5]
+  },
+  {
+    "id": 4,
+    "name": "BBQ Chicken",
+    "ingredients": ["BBQ sauce", "mozzarella cheese", "grilled chicken", "red onions", "cilantro"],
+    "price": 11.99,
+    "allergens": [2,3,5]
+  },
+  {
+    "id": 5,
+    "name": "Quattro Formagio",
+    "ingredients": ["tomato sauce", "mozzarella cheese", "cheddar cheese", "Parmesan cheese", "creamy cheese"],
+    "price": 12.99,
+    "allergens": [1,2,5]
+  },
+  {
+    "id": 6,
+    "name": "Al Tonno",
+    "ingredients": ["tomato sauce", "mozzarella cheese", "tuna", "red onions", "capers"],
+    "price": 13.99,
+    "allergens": [2,3,5]
+  },
+  {
+    "id": 7,
+    "name": "Frutti di Mare",
+    "ingredients": ["tomato sauce", "mozzarella cheese", "calamari", "shrimp", "mussels", "clams"],
+    "price": 14.99,
+    "allergens": [2,3,4,5]
+  }
+]
