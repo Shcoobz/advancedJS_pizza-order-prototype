@@ -4,10 +4,11 @@
   <title>Pizza</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="./public/styles.css" />
-  <script src="./public/w3script.js"></script>
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Amatic+SC" />
+  <script src="./public/w3script.js"></script>
+  <script src="./public/script.js"></script>
   <style>
     body,
     h1,
@@ -56,22 +57,39 @@
       <!-- Menu -->
       <div id="menu" class="w3-container w3-black w3-xxlarge w3-padding-64">
         <h1 class="w3-center w3-jumbo w3-padding-32">THE MENU</h1>
+        <!-- Allergen Filter -->
+        <form id="filterForm" class="w3-container w3-margin w3-center">
+          <label for="allergenFilter" class="w3-text-light-grey"
+            >Filter by allergen:</label
+          >
+          <select id="allergenFilter" name="allergen">
+            <!-- options will be filled in dynamically -->
+          </select>
+        </form>
         <div class="w3-row w3-center w3-border w3-border-dark-grey">
           <a href="#pizza"
             ><div class="w3-third w3-padding-large w3-red">Pizza</div></a
           >
         </div>
         <div id="pizza" class="w3-container w3-white w3-padding-32">
-          <h1>
+          <div id="pizzaList"></div>
+          <!-- <h1>
             <b>Margherita</b>
             <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span>
           </h1>
-          <p id="ingredients" class="w3-text-grey">
+          <p id="description" class="w3-text-grey">
+            A timeless classic honoring Queen Margherita of Italy. This pizza is
+            an uncomplicated blend of simple and fresh ingredients: tangy San
+            Marzano tomatoes, a hefty layer of creamy mozzarella cheese, fresh
+            basil leaves, and a drizzle of extra virgin olive oil on our perfect
+            pizza dough.
+          </p>
+          <div id="ingredients" class="w3-text-grey">
             Ingredients: Fresh tomatoes, fresh mozzarella, fresh basil
-          </p>
-          <p id="allergens" class="w3-text-grey">
+          </div>
+          <div id="allergens" class="w3-text-grey">
             Allergens: Fresh tomatoes, fresh mozzarella, fresh basil
-          </p>
+          </div>
           <hr />
           <h1>
             <b>Formaggio</b>
@@ -104,7 +122,7 @@
           <p class="w3-text-grey">
             Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef,
             chicken
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
