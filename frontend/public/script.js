@@ -1,4 +1,7 @@
-let pizzaListDiv = document.getElementById('pizza');
+// TODO: maybe add different font, it's hard to read
+// TODO: change ingredients/allergens font color
+
+let pizzaListDiv = document.getElementById('pizzaList');
 let filterForm = document.getElementById('filterForm');
 let allergenFilter = document.getElementById('allergenFilter');
 
@@ -50,9 +53,9 @@ function displayPizzas(pizzas) {
     pizzaDiv.innerHTML = `
       <h1>
         <b>${pizza.name}</b>
-        <span class="w3-right w3-tag w3-dark-grey w3-round">$${pizza.price.toFixed(
-          2
-        )}</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">$${
+          pizza.price
+        }</span>
       </h1>
       <p id="description" class="w3-text-grey">${pizza.description}</p>
       <div id="ingredients" class="w3-text-grey">Ingredients: ${pizza.ingredients.join(
