@@ -50,8 +50,8 @@ app.get('/api/allergen', (req, res) => {
   res.json(allergens);
 });
 
-app.get('/api/pizza/allergens', (req, res) => {
-  console.log('GET at /api/pizza/allergens');
+app.get('/pizza/list', (req, res) => {
+  console.log('GET at /pizza/list');
 
   // find allergens
   const getAllergensForPizza = (pizza) => {

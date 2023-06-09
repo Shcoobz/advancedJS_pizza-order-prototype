@@ -71,7 +71,7 @@ function displayPizzas(pizzas) {
 }
 
 async function fetchAndDisplayPizzas() {
-  let pizzas = await fetchData('http://localhost:3000/api/pizza/allergens');
+  let pizzas = await fetchData('http://localhost:3000/pizza/list');
   pizzas = filterPizzas(pizzas);
   displayPizzas(pizzas);
 }
