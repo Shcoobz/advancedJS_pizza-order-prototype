@@ -8,7 +8,7 @@ const app = express();
 const port = 3000;
 
 let pizzas, allergens, orders;
-
+app.use(express.json())
 app.use(express.static(path.join(__dirname, '../frontend')));
 
 // app.get('/', (req, res) => {
@@ -93,8 +93,9 @@ app.get("/api/order", (req, res) => {
 
 app.post("/api/order", (req, res) => {
   console.log("POST at /api/order")
+  //orders = req.body
   orders.push(new Date())
-  console.log(orders)
+  
   try{
     fs.writeFileSync(
       ordersListPath,
