@@ -3,10 +3,11 @@ const fs = require(`fs`);
 const path = require('path');
 const pizzaListPath = './data/pizzas.json';
 const allergensListPath = './data/allergens.json';
+const ordersListPath = "./data/orders.json";
 const app = express();
 const port = 3000;
 
-let pizzas, allergens;
+let pizzas, allergens, orders;
 
 app.use(express.static(path.join(__dirname, '../frontend')));
 
@@ -38,6 +39,16 @@ fs.readFile(allergensListPath, 'utf8', (err, data) => {
   allergens = JSON.parse(data);
 });
 
+fs.readFile(ordersListPath, 'utf8', (err, data) => {
+  console.log('\nreading Orders List');
+
+  if (err) {
+    console.error('Error reading file:', err);
+    return res.status(500).send(err);
+  }
+  orders = JSON.parse(data);
+});
+
 app.get('/api/pizza', (req, res) => {
   console.log('GET at /api/pizza');
 
@@ -49,6 +60,8 @@ app.get('/api/allergen', (req, res) => {
 
   res.json(allergens);
 });
+
+
 
 app.get('/pizza/list', (req, res) => {
   console.log('GET at /pizza/list');
@@ -70,6 +83,30 @@ app.get('/pizza/list', (req, res) => {
 
   res.json(pizzasWithAllergens);
 });
+
+
+app.get("/api/order", (req, res) => {
+  console.log("GET at /api/order")
+  console.log(req.body)
+  res.json(orders)
+})
+
+app.post("/api/order", (req, res) => {
+  console.log("POST at /api/order")
+  orders.push(new Date())
+  console.log(orders)
+  try{
+    fs.writeFileSync(
+      ordersListPath,
+      JSON.stringify(orders, null, 4)
+    )
+
+  } catch (err) {
+    console.error(err)
+  }
+  res.json(orders)
+})
+
 
 app.listen(port, () => {
   console.log(`Server at http://localhost:${port}`);
