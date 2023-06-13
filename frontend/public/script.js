@@ -3,6 +3,7 @@ let filterForm = document.getElementById('filterForm');
 let allergenFilter = document.getElementById('allergenFilter');
 let orders = [];
 
+// fetching data
 async function fetchData(url) {
   const response = await fetch(url);
   const data = await response.json();
@@ -28,6 +29,8 @@ function addAllergenOptions(allergens) {
 }
 
 async function fetchAndDisplayAllergens() {
+  console.log('fetching Allergens data');
+
   const data = await fetchData('http://localhost:3000/api/allergen');
 
   createDefaultSelectOption();
@@ -73,13 +76,17 @@ function createPizzaDiv(pizzas) {
 }
 
 async function fetchAndDisplayPizzas() {
+  console.log('fetching Pizza data');
+
   let pizzas = await fetchData('http://localhost:3000/pizza/list');
+
   pizzas = filterPizzas(pizzas);
   createPizzaDiv(pizzas);
 }
 
 // task 4
 // orders
+
 // functions
 function addToOrder(pizzaId) {
   let amountInput = document.getElementById(`amount${pizzaId}`);
@@ -219,6 +226,8 @@ function getOrderDetailsFromForm() {
 
 // async functions
 async function fetchPizzas() {
+  console.log('fetching Pizza Data');
+
   const pizzas = await fetchData('http://localhost:3000/pizza/list');
   return pizzas;
 }
@@ -250,6 +259,8 @@ async function displayOrderForm() {
 }
 
 async function submitOrderDetails(orderDetails) {
+  console.log('fetching Order Data');
+
   let response = await fetch('http://localhost:3000/api/order', {
     method: 'POST',
     headers: {

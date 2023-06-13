@@ -25,7 +25,7 @@ fs.readFile(pizzaListPath, 'utf8', (err, data) => {
 });
 
 fs.readFile(allergensListPath, 'utf8', (err, data) => {
-  console.log('\nreading Allergenes List');
+  console.log('\nreading Allergens List');
 
   if (err) {
     console.error('Error reading file:', err);
@@ -77,6 +77,7 @@ function addAllergensToPizzas(pizzas, allergens) {
 
 app.get('/pizza/list', (req, res) => {
   console.log('GET at /pizza/list');
+
   const pizzasWithAllergens = addAllergensToPizzas(pizzas, allergens);
   res.json(pizzasWithAllergens);
 });
@@ -103,5 +104,5 @@ app.post('/api/order', (req, res) => {
 
 // server location
 app.listen(port, () => {
-  console.log(`Server at http://localhost:${port}`);
+  console.log(`\nServer at http://localhost:${port}`);
 });
