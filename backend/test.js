@@ -1,3 +1,53 @@
-const array1 = [1, 2, 3];
+let kovner = [
+    {
+        id: 1,
+        pizzas: [
+            {
+                id: 1,
+                amount: 2
+            }
+        ],
+        date: {
+            year: 2022,
+            month: 6,
+            day: 7,
+            hour: 18,
+            minute: 47
+        },
+        customer: {
+            name: "John Doe",
+            email: "jd@example.com",
+            address: {
+                city: "Palermo",
+                street: "Via Appia 6"
+            }
+        }
+    },
+    {
+        id: 1,
+        pizzas: [
+            {
+                id: 1,
+                amount: 2
+            }
+        ],
+        date: {
+            year: 2022,
+            month: 6,
+            day: 7,
+            hour: 18,
+            minute: 47
+        },
+        customer: {
+            name: "John Doe",
+            email: "jd@example.com",
+            address: {
+                city: "Palermo",
+                street: "Via Appia 6"
+            }
+        }
+    }
+]
 
-console.log(array1.some((x) => x === 2));
+
+console.log(kovner[1])

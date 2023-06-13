@@ -6,6 +6,8 @@ const allergensListPath = './data/allergens.json';
 const ordersListPath = "./data/orders.json";
 const app = express();
 const port = 3000;
+const bodyParser = require("body-parser")
+app.use(bodyParser.urlencoded({ extended: true }))
 
 let pizzas, allergens, orders;
 app.use(express.json())
@@ -93,9 +95,37 @@ app.get("/api/order", (req, res) => {
 
 app.post("/api/order", (req, res) => {
   console.log("POST at /api/order")
-  //orders = req.body
-  orders.push(new Date())
+  console.log(req.body)
+  console.log(orders)
+  let date = new Date()
+  let newOrderToPush = {id: orders.length + 1,
+                        pizzas:[
+                          {
+                            id: req.body.pizzas.id,
+                            amount: req.body.pizzas.amount
+                          }
+                        ],
+                        date: {
+                          year: date.getFullYear(),
+                          month: date.getMonth() + 1,
+                          day: date.getDate(),
+                          hour: date.getHours(),
+                          minute: date.getMinutes()
+
+                        },
+                        customer: {
+                          name: req.body.customer.name,
+                          email: req.body.customer.email,
+                          adress: {
+                            city: req.body.customer.address.city,
+                            street: req.body.customer.address.street
+                          }
+                        }
+  }
+
   
+orders.push(newOrderToPush)
+
   try{
     fs.writeFileSync(
       ordersListPath,
