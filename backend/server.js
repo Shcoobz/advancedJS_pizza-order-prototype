@@ -11,6 +11,7 @@ let pizzas, allergens, orders;
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(express.static(path.join(__dirname, '../frontend/public')));
 
 // reading of files
 fs.readFile(pizzaListPath, 'utf8', (err, data) => {
@@ -57,24 +58,26 @@ app.get('/api/allergen', (req, res) => {
 });
 
 // task 2
-app.get('/pizza/list', (req, res) => {
-  console.log('GET at /pizza/list');
+function getAllergensForPizza(pizza, allergens) {
+  const pizzaAllergens = allergens.filter((allergen) =>
+    pizza.allergens.includes(allergen.id)
+  );
 
-  // find allergens
-  const getAllergensForPizza = (pizza) => {
-    const pizzaAllergens = allergens.filter((allergen) =>
-      pizza.allergens.includes(allergen.id)
-    );
+  return pizzaAllergens;
+}
 
-    return pizzaAllergens;
-  };
-
-  // add allergens to pizza
-  const pizzasWithAllergens = pizzas.map((pizza) => {
-    const allergenForThisPizza = getAllergensForPizza(pizza);
+function addAllergensToPizzas(pizzas, allergens) {
+  const pizzasWithAllergens = pizzas.map(function (pizza) {
+    const allergenForThisPizza = getAllergensForPizza(pizza, allergens);
     return { ...pizza, allergens: allergenForThisPizza };
   });
 
+  return pizzasWithAllergens;
+}
+
+app.get('/pizza/list', (req, res) => {
+  console.log('GET at /pizza/list');
+  const pizzasWithAllergens = addAllergensToPizzas(pizzas, allergens);
   res.json(pizzasWithAllergens);
 });
 
@@ -98,6 +101,7 @@ app.post('/api/order', (req, res) => {
   res.json(orders);
 });
 
+// server location
 app.listen(port, () => {
   console.log(`Server at http://localhost:${port}`);
 });
