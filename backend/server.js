@@ -6,8 +6,8 @@ const allergensListPath = './data/allergens.json';
 const ordersListPath = './data/orders.json';
 const app = express();
 const port = 3000;
-const bodyParser = require("body-parser")
-app.use(bodyParser.urlencoded({ extended: true }))
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
 
 let pizzas, allergens, orders;
 
@@ -84,64 +84,6 @@ app.get('/pizza/list', (req, res) => {
   res.json(pizzasWithAllergens);
 });
 
-<<<<<<< HEAD
-
-app.get("/api/order", (req, res) => {
-  console.log("GET at /api/order")
-  console.log(req.body)
-  res.json(orders)
-})
-
-app.post("/api/order", (req, res) => {
-  console.log("POST at /api/order")
-  console.log(req.body)
-  console.log(orders)
-  let date = new Date()
-  let newOrderToPush = {id: orders.length + 1,
-                        pizzas:[
-                          {
-                            id: req.body.pizzas.id,
-                            amount: req.body.pizzas.amount
-                          }
-                        ],
-                        date: {
-                          year: date.getFullYear(),
-                          month: date.getMonth() + 1,
-                          day: date.getDate(),
-                          hour: date.getHours(),
-                          minute: date.getMinutes()
-
-                        },
-                        customer: {
-                          name: req.body.customer.name,
-                          email: req.body.customer.email,
-                          adress: {
-                            city: req.body.customer.address.city,
-                            street: req.body.customer.address.street
-                          }
-                        }
-  }
-
-  
-orders.push(newOrderToPush)
-
-  try{
-    fs.writeFileSync(
-      ordersListPath,
-      JSON.stringify(orders, null, 4)
-    )
-
-  } catch (err) {
-    console.error(err)
-  }
-  res.json(orders)
-})
-
-
-app.listen(port, () => {
-  console.log(`Server at http://localhost:${port}`);
-=======
-// task 3
 app.get('/api/order', (req, res) => {
   console.log('GET at /api/order');
   console.log(req.body);
@@ -150,8 +92,35 @@ app.get('/api/order', (req, res) => {
 
 app.post('/api/order', (req, res) => {
   console.log('POST at /api/order');
-  //orders = req.body
-  orders.push(new Date());
+  console.log(req.body);
+  console.log(orders);
+  let date = new Date();
+  let newOrderToPush = {
+    id: orders.length + 1,
+    pizzas: [
+      {
+        id: req.body.pizzas.id,
+        amount: req.body.pizzas.amount,
+      },
+    ],
+    date: {
+      year: date.getFullYear(),
+      month: date.getMonth() + 1,
+      day: date.getDate(),
+      hour: date.getHours(),
+      minute: date.getMinutes(),
+    },
+    customer: {
+      name: req.body.customer.name,
+      email: req.body.customer.email,
+      adress: {
+        city: req.body.customer.address.city,
+        street: req.body.customer.address.street,
+      },
+    },
+  };
+
+  orders.push(newOrderToPush);
 
   try {
     fs.writeFileSync(ordersListPath, JSON.stringify(orders, null, 4));
@@ -161,8 +130,6 @@ app.post('/api/order', (req, res) => {
   res.json(orders);
 });
 
-// server location
 app.listen(port, () => {
-  console.log(`\nServer at http://localhost:${port}`);
->>>>>>> 8402ecdea7f9c249ca94fcf678aa1b3315d4119a
+  console.log(`Server at http://localhost:${port}`);
 });
