@@ -5,12 +5,14 @@ let pizzaListDiv = document.getElementById('pizzaList');
 let filterForm = document.getElementById('filterForm');
 let allergenFilter = document.getElementById('allergenFilter');
 
+// fetching data
 async function fetchData(url) {
   const response = await fetch(url);
   const data = await response.json();
   return data;
 }
 
+// task 2
 // allergens
 function createDefaultSelectOption() {
   let defaultOption = document.createElement('option');
@@ -75,6 +77,8 @@ async function fetchAndDisplayPizzas() {
   pizzas = filterPizzas(pizzas);
   displayPizzas(pizzas);
 }
+
+// task 4
 
 // main
 async function main() {

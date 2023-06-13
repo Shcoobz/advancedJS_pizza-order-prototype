@@ -3,22 +3,16 @@ const fs = require(`fs`);
 const path = require('path');
 const pizzaListPath = './data/pizzas.json';
 const allergensListPath = './data/allergens.json';
-const ordersListPath = "./data/orders.json";
+const ordersListPath = './data/orders.json';
 const app = express();
 const port = 3000;
 
 let pizzas, allergens, orders;
-app.use(express.json())
+
+app.use(express.json());
 app.use(express.static(path.join(__dirname, '../frontend')));
 
-// app.get('/', (req, res) => {
-//   const jsonData = fs.readFileSync('pizzas.json', 'utf8');
-//   const data = JSON.parse(jsonData);
-
-//   res.send(data);
-//   res.render(index);
-// });
-
+// reading of files
 fs.readFile(pizzaListPath, 'utf8', (err, data) => {
   console.log('\nreading Pizza List');
 
@@ -49,6 +43,7 @@ fs.readFile(ordersListPath, 'utf8', (err, data) => {
   orders = JSON.parse(data);
 });
 
+// task 1
 app.get('/api/pizza', (req, res) => {
   console.log('GET at /api/pizza');
 
@@ -61,8 +56,7 @@ app.get('/api/allergen', (req, res) => {
   res.json(allergens);
 });
 
-
-
+// task 2
 app.get('/pizza/list', (req, res) => {
   console.log('GET at /pizza/list');
 
@@ -84,30 +78,25 @@ app.get('/pizza/list', (req, res) => {
   res.json(pizzasWithAllergens);
 });
 
+// task 3
+app.get('/api/order', (req, res) => {
+  console.log('GET at /api/order');
+  console.log(req.body);
+  res.json(orders);
+});
 
-app.get("/api/order", (req, res) => {
-  console.log("GET at /api/order")
-  console.log(req.body)
-  res.json(orders)
-})
-
-app.post("/api/order", (req, res) => {
-  console.log("POST at /api/order")
+app.post('/api/order', (req, res) => {
+  console.log('POST at /api/order');
   //orders = req.body
-  orders.push(new Date())
-  
-  try{
-    fs.writeFileSync(
-      ordersListPath,
-      JSON.stringify(orders, null, 4)
-    )
+  orders.push(new Date());
 
+  try {
+    fs.writeFileSync(ordersListPath, JSON.stringify(orders, null, 4));
   } catch (err) {
-    console.error(err)
+    console.error(err);
   }
-  res.json(orders)
-})
-
+  res.json(orders);
+});
 
 app.listen(port, () => {
   console.log(`Server at http://localhost:${port}`);
