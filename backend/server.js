@@ -84,6 +84,7 @@ app.get('/pizza/list', (req, res) => {
   res.json(pizzasWithAllergens);
 });
 
+// task 3
 app.get('/api/order', (req, res) => {
   console.log('GET at /api/order');
   console.log(req.body);
