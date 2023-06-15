@@ -6,8 +6,8 @@ const allergensListPath = './data/allergens.json';
 const ordersListPath = './data/orders.json';
 const app = express();
 const port = 3000;
-const bodyParser = require("body-parser")
-app.use(bodyParser.urlencoded({ extended: true }))
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
 
 let pizzas, allergens, orders;
 
