@@ -84,7 +84,6 @@ app.get('/pizza/list', (req, res) => {
   res.json(pizzasWithAllergens);
 });
 
-<<<<<<< HEAD
 
 app.get("/api/order", (req, res) => {
   console.log("GET at /api/order")
@@ -100,8 +99,8 @@ app.post("/api/order", (req, res) => {
   let newOrderToPush = {id: orders.length + 1,
                         pizzas:[
                           {
-                            id: req.body.pizzas.id,
-                            amount: req.body.pizzas.amount
+                            id: req.body.pizzas[0].id,
+                            amount: req.body.pizzas[0].amount
                           }
                         ],
                         date: {
@@ -140,29 +139,4 @@ orders.push(newOrderToPush)
 
 app.listen(port, () => {
   console.log(`Server at http://localhost:${port}`);
-=======
-// task 3
-app.get('/api/order', (req, res) => {
-  console.log('GET at /api/order');
-  console.log(req.body);
-  res.json(orders);
-});
-
-app.post('/api/order', (req, res) => {
-  console.log('POST at /api/order');
-  //orders = req.body
-  orders.push(new Date());
-
-  try {
-    fs.writeFileSync(ordersListPath, JSON.stringify(orders, null, 4));
-  } catch (err) {
-    console.error(err);
-  }
-  res.json(orders);
-});
-
-// server location
-app.listen(port, () => {
-  console.log(`\nServer at http://localhost:${port}`);
->>>>>>> 8402ecdea7f9c249ca94fcf678aa1b3315d4119a
 });
