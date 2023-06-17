@@ -153,6 +153,7 @@ function createDeleteBtn(orders, pizzaLine, index) {
 
 function calculatePizzaPrice(pizzaOrder, pizzas) {
 	const pizza = pizzas.find((pizza) => pizza.id === pizzaOrder.id);
+	console.log(pizza);
 	return parseFloat(
 		(pizza.price * pizzaOrder.amount).toFixed(fixedPriceDecimal)
 	);
@@ -163,6 +164,7 @@ function calculateOverallTotal(orders, pizzas) {
 		const pizzaPrice = calculatePizzaPrice(pizzaOrder, pizzas);
 		return acc + pizzaPrice;
 	}, 0);
+	console.log(total);
 
 	return parseFloat(total.toFixed(fixedPriceDecimal));
 }
@@ -248,19 +250,19 @@ async function displayOrderForm() {
 		orderFormDiv.style.display = "block";
 		let pizzas = await fetchPizzas();
 		orderSummaryDiv.innerHTML = "";
-		let overallTotal = 0;
-
+		const totalOrderPrice = calculateOverallTotal(orders, pizzas);
+		console.log(totalOrderPrice);
 		orders.forEach((pizzaOrder, index) => {
 			const totalPizzaPrice = calculatePizzaPrice(pizzaOrder, pizzas);
+
 			const pizzaLine = createPizzaLineElement(pizzaOrder, pizzas, index);
 
 			createAndAppendTotalText(pizzaLine, totalPizzaPrice);
-			overallTotal += totalPizzaPrice;
 
 			orderSummaryDiv.appendChild(pizzaLine);
 		});
 
-		appendOverallTotal(orderSummaryDiv, overallTotal);
+		appendOverallTotal(orderSummaryDiv, totalOrderPrice);
 	} else {
 		orderFormDiv.style.display = "none";
 	}
