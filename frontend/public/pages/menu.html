@@ -4,9 +4,7 @@
   <title>Pizza Order Prototype</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="../public/styles.css" />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Amatic+SC" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
   <script src="../public/w3script.js"></script>
   <style>
     body,
@@ -19,13 +17,14 @@
       font-family: 'Amatic SC', sans-serif;
     }
   </style>
+
   <body>
     <!-- Start Content -->
     <div class="main-container">
       <div class="content">
         <div id="home" class="w3-content">
           <!-- Navbar (Sits on top) -->
-          <div class="w3-top w3-bar w3-xlarge w3-black w3-opacity-min">
+          <div id="customNav" class="w3-top w3-bar w3-xlarge w3-black w3-opacity-min">
             <a href="#home" class="w3-bar-item w3-button">HOME</a>
             <a href="#menu" class="w3-bar-item w3-button">MENU</a>
             <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
@@ -33,24 +32,18 @@
           </div>
 
           <!-- Header image -->
-          <div
-            style="
+          <div style="
               height: 800px;
               background-image: url('https://www.w3schools.com/w3images/pizza.jpg');
               background-size: cover;
-            "
-            class="w3-display-container w3-grayscale-min">
+            " class="w3-display-container w3-grayscale-min">
             <div class="w3-display-bottomleft">
               <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
             </div>
             <div class="w3-display-middle w3-center">
-              <span class="w3-text-white" style="font-size: 100px"
-                >thin<br />CRUST PIZZA</span
-              >
+              <span class="w3-text-white" style="font-size: 100px">thin<br />CRUST PIZZA</span>
               <p>
-                <a href="#menu" class="w3-button w3-xxlarge w3-black"
-                  >Let me see the menu</a
-                >
+                <a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a>
               </p>
             </div>
           </div>
@@ -65,9 +58,9 @@
               </select>
             </form>
             <div class="w3-row w3-center w3-border w3-border-dark-grey">
-              <a href="#pizza"
-                ><div class="w3-third w3-padding-large w3-red">Pizza</div></a
-              >
+              <a href="#pizza">
+                <div class="w3-third w3-padding-large w3-red">Pizza</div>
+              </a>
               <!-- pizzas & info will be filled in dynamically -->
             </div>
             <div id="pizza" class="w3-container w3-white w3-padding-32"></div>
@@ -77,10 +70,7 @@
 
       <!-- Order -->
       <div class="sidebar">
-        <div
-          id="orderForm"
-          class="w3-container w3-white w3-padding-32"
-          style="display: none">
+        <div id="orderForm" class="w3-container w3-white w3-padding-32" style="display: none">
           <h1 class="w3-center w3-jumbo w3-padding-32">Your Order</h1>
           <div id="orderSummary" class="w3-container w3-margin w3-center"></div>
           <form id="customerForm" class="w3-container w3-margin w3-center">
@@ -107,4 +97,5 @@
     </div>
     <script src="../public/script.js"></script>
   </body>
+
 </html>
