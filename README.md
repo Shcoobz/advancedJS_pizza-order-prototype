@@ -1,10 +1,10 @@
 # Pizzeria App
 
-![Project Image](/backend/img/pizzeria-app.png)
+![Project Image](/backend/img/advancedJS_pizzeria-app.png)
 
 ## Summary
 
-Welcome to the Pizzaria App! This application is designed to make ordering pizzas a breeze. It offers a user-friendly interface and a range of features to enhance your pizza ordering experience.
+Welcome to the Pizzeria App! This application is designed to make ordering pizzas a breeze. It offers a user-friendly interface and a range of features to enhance your pizza ordering experience.
 
 The core functionality includes:
 
